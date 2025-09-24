@@ -1,0 +1,506 @@
+/* Library Management System CSS Styles */
+
+/* Root variables for consistent theming */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 14px;
+    
+    /* Color palette */
+    -primary-color: #2c3e50;
+    -secondary-color: #3498db;
+    -accent-color: #e74c3c;
+    -success-color: #27ae60;
+    -warning-color: #f39c12;
+    -background-color: #ecf0f1;
+    -card-background: #ffffff;
+    -text-color: #2c3e50;
+    -text-muted: #7f8c8d;
+    -border-color: #bdc3c7;
+}
+
+/* Main Layout */
+.main-layout {
+    -fx-background-color: -background-color;
+}
+
+/* Header */
+.header {
+    -fx-background-color: -primary-color;
+    -fx-background-radius: 0 0 8 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+
+.header-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.header-user {
+    -fx-text-fill: #bdc3c7;
+    -fx-font-size: 12px;
+}
+
+/* Side Menu */
+.side-menu {
+    -fx-background-color: -card-background;
+    -fx-border-color: -border-color;
+    -fx-border-width: 0 1 0 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 2, 0);
+}
+
+.menu-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -primary-color;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -text-color;
+    -fx-padding: 12 15 12 15;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+}
+
+.menu-button:hover {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: -secondary-color;
+}
+
+.menu-button:pressed {
+    -fx-background-color: -secondary-color;
+    -fx-text-fill: white;
+}
+
+/* Content Area */
+.content-area {
+    -fx-background-color: -background-color;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Dashboard */
+.dashboard {
+    -fx-spacing: 20;
+}
+
+.page-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -primary-color;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Statistics Cards */
+.stats-card {
+    -fx-background-color: -card-background;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 8, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.stats-card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 12, 0, 0, 3);
+    -fx-scale-y: 1.02;
+    -fx-scale-x: 1.02;
+}
+
+.stats-icon {
+    -fx-font-size: 32px;
+    -fx-text-fill: -secondary-color;
+}
+
+.stats-value {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -primary-color;
+}
+
+.stats-title {
+    -fx-font-size: 12px;
+    -fx-text-fill: -text-muted;
+    -fx-font-weight: bold;
+}
+
+/* Section Titles */
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -primary-color;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Action Buttons */
+.action-button {
+    -fx-background-color: -secondary-color;
+    -fx-text-fill: white;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 1);
+}
+
+.action-button:hover {
+    -fx-background-color: #2980b9;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+
+.action-button:pressed {
+    -fx-background-color: #21618c;
+    -fx-scale-y: 0.98;
+    -fx-scale-x: 0.98;
+}
+
+.action-button:disabled {
+    -fx-opacity: 0.6;
+    -fx-effect: none;
+}
+
+/* Management Views */
+.management-view {
+    -fx-background-color: transparent;
+}
+
+.search-bar {
+    -fx-background-color: -card-background;
+    -fx-padding: 15;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 1);
+}
+
+.button-bar {
+    -fx-padding: 10 0 10 0;
+}
+
+.stats-bar {
+    -fx-background-color: -card-background;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 1);
+}
+
+.stats-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: -primary-color;
+}
+
+/* Data Tables */
+.data-table {
+    -fx-background-color: -card-background;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.data-table .column-header-background {
+    -fx-background-color: -primary-color;
+}
+
+.data-table .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.data-table .table-row-cell {
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 8 5 8 5;
+}
+
+.data-table .table-row-cell:selected {
+    -fx-background-color: -secondary-color;
+    -fx-text-fill: white;
+}
+
+.data-table .table-row-cell:hover {
+    -fx-background-color: #ecf0f1;
+}
+
+/* Form Controls */
+.text-field, .text-area {
+    -fx-background-color: -card-background;
+    -fx-border-color: -border-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 8;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-border-color: -secondary-color;
+    -fx-border-width: 2;
+}
+
+.combo-box {
+    -fx-background-color: -card-background;
+    -fx-border-color: -border-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.combo-box:focused {
+    -fx-border-color: -secondary-color;
+    -fx-border-width: 2;
+}
+
+.date-picker {
+    -fx-background-color: -card-background;
+    -fx-border-color: -border-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.date-picker:focused {
+    -fx-border-color: -secondary-color;
+    -fx-border-width: 2;
+}
+
+.spinner {
+    -fx-background-color: -card-background;
+    -fx-border-color: -border-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+/* Dialog Styles */
+.dialog-pane {
+    -fx-background-color: -card-background;
+}
+
+.dialog-pane > .header-panel {
+    -fx-background-color: -primary-color;
+}
+
+.dialog-pane > .header-panel > .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Info Sections */
+.info-section {
+    -fx-background-color: -card-background;
+    -fx-background-radius: 8;
+    -fx-border-color: -border-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 3, 0, 0, 1);
+}
+
+.info-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: -text-muted;
+}
+
+.detail-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: -text-color;
+}
+
+.detail-value {
+    -fx-text-fill: -text-color;
+}
+
+/* Warning Box */
+.warning-box {
+    -fx-background-color: #fff3cd;
+    -fx-border-color: #ffeaa7;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+.warning-icon {
+    -fx-font-size: 18px;
+    -fx-text-fill: -warning-color;
+}
+
+.warning-text {
+    -fx-text-fill: #856404;
+    -fx-font-weight: bold;
+}
+
+/* Activity List */
+.activity-list {
+    -fx-background-color: -card-background;
+    -fx-border-color: -border-color;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+/* Charts */
+.chart {
+    -fx-background-color: -card-background;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.chart-title {
+    -fx-text-fill: -primary-color;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+/* Statistics View */
+.statistics-view {
+    -fx-background-color: transparent;
+}
+
+.overview-cards {
+    -fx-padding: 0 0 20 0;
+}
+
+.card-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -primary-color;
+}
+
+.card-label {
+    -fx-text-fill: -text-muted;
+    -fx-font-size: 12px;
+}
+
+.card-value {
+    -fx-text-fill: -primary-color;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+/* Tab Pane */
+.tab-pane {
+    -fx-background-color: -card-background;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.tab-pane .tab-header-area {
+    -fx-padding: 0 0 0 0;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 8 8 0 0;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: -card-background;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: -text-color;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: -secondary-color;
+}
+
+/* Scrollbars */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 6;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: -border-color;
+    -fx-background-radius: 6;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: -text-muted;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: -text-color;
+    -fx-border-color: transparent;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-padding: 6 12 6 12;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: -border-color;
+}
+
+.button:pressed {
+    -fx-background-color: #95a5a6;
+}
+
+/* Separators */
+.separator .line {
+    -fx-border-color: -border-color;
+    -fx-border-width: 0.5;
+}
+
+/* Tooltips */
+.tooltip {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: white;
+    -fx-background-radius: 4;
+    -fx-font-size: 12px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+
+/* Progress indicators */
+.progress-bar {
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 10;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: -secondary-color;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
+
+/* Additional utility classes */
+.success {
+    -fx-text-fill: -success-color;
+    -fx-font-weight: bold;
+}
+
+.warning {
+    -fx-text-fill: -warning-color;
+    -fx-font-weight: bold;
+}
+
+.error {
+    -fx-text-fill: -accent-color;
+    -fx-font-weight: bold;
+}
+
+.muted {
+    -fx-text-fill: -text-muted;
+}
+
+.center {
+    -fx-alignment: center;
+}
+
+.char-count {
+    -fx-text-fill: -text-muted;
+    -fx-font-size: 11px;
+}
