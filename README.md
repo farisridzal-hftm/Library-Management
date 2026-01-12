@@ -157,4 +157,4 @@ Das Erscheinungsbild kann über die CSS-Datei `src/main/resources/library-style.
 
 ---
 
-*Dieses Projekt wurde als Teil des Kurses IN257 Relational Databases entwickelt und demonstriert die praktische Anwendung von Datenbankkonzepten in einer Desktop-Anwendung.*
+*Dieses Projekt wurde als Teil des Kurses IN257 Relational Databases und IN255 Programming 3 (Java) entwickelt und demonstriert die praktische Anwendung von Datenbankkonzepten in einer Desktop-Anwendung.*
